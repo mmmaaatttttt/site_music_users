@@ -2,7 +2,7 @@
   "name": "day2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,6 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^5.0.0-alpha.8",
-    "node-pg": "^1.0.1"
+    "pg": "^8.6.0"
   }
 }
