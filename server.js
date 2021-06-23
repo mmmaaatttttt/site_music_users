@@ -7,7 +7,7 @@ const artistRoutes = require("./routes/artists");
 app.use(express.json());
 
 app.use("/auth", authRoutes);
-app.use("/artists", artistRoutes)
+app.use("/artists", artistRoutes);
 
 app.get("/add/:num1/:num2", (req, res) => {
   const { num1, num2 } = req.params;

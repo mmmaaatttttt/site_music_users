@@ -9,7 +9,8 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const result = await db.query(`
+  const result = await db.query(
+    `
     INSERT INTO artists (name) VALUES ($1)
     RETURNING id, name
   `,
