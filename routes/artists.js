@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
   `,
     [req.body.name]
   );
-  return res.json({ artist: result.rows[0] });
+  return res.status(201).json({ artist: result.rows[0] });
 });
 
 module.exports = router;
